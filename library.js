@@ -107,6 +107,7 @@
             // Save steam-specific information to the user
             user.setUserField(uid, 'steamid', steamID);
             user.setUserField(uid, 'profileurl', profileUrl);
+            user.setUserField(uid, 'email:confirmed', 1);
             db.setObjectField('steamid:uid', steamID, uid);
 
 
